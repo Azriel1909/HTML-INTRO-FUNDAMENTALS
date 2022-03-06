@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJERCICIO_6</title>
+</head>
+  <body>
+      <!--TEMA 12 ENLACES A SECCIONES INTERNAS
+      que nos lleve a secciones especificas de alguna página
+      ATRIBUTO
+      id = identificador único-->
+    <h2>OSOS PANDA ROJOS</h2>
+    <main>
+      <h2> CONTENIDO</h2>
+      <a href="#parrafo-1">¿Qué son?</a> <br> <br>
+      <a href="#parrafo-2">¿Cómo son?</a> <br> <br>
+      <img src="https://www.hogarmania.com/archivos/201411/panda-rojo-principal-668x400x80xX.jpg"> <br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Ailurus_fulgens_RoterPanda_LesserPanda.jpg"> <br>
+      <h3 id="parrafo-1">¿Qué son?</h3>
+      <p>El panda rojo es eclipsado por el gigante blanco y negro con el que comparte nombre. Suele ser del tamaño del gato doméstico, aunque su cola grande y espesa añade 46 centímetros a su cuerpo. Utiliza su anillada cola como manta para arroparse en las frías cumbres de las montañas.El panda rojo comparte hábitat (selvas de gran altitud) con el panda gigante, aunque está más extendido. Se encuentra en las montañas de Nepal y del norte de Birmania, así como en las regiones centrales de China.</p>
+      <img src="https://okdiario.com/img/2020/12/26/-como-es-el-panda-rojo_-2.jpg"> <br>
+      <h3 id="parrafo-2">¿Cómo son?</h3>
+      <p>Son animales tímidos y solitarios salvo en época de apareamiento. Las hembras suelen tener crías en primavera y en verano, normalmente entre una y cuatro. Los pandas jóvenes se quedan en su guarida hasta los 90 días, mientras sus madres cuidan de ellos. Los machos apenas se interesan por su descendencia.</p>
+
+      <!--TEMA 13 ENLACES CON IMÁGENES
+      ATRIBUTOS USADOS
+      <a href>
+      <img src="">-->
+      <h2>Para más infromación da click en la imágen...</h2>
+      <a href="https://www.zoobarcelona.cat/es/animales/panda-rojo" rel="noopener noreferrer"><img src="https://www.ambientum.com/wp-content/uploads/2020/03/panda-rojo-chino.jpg" alt="Un oso panda rojo mirando"></a>
+
+      <!--TEMA 14 - CREAR ENLACES CON #
+      DEADLINKS = enlaces muertos que no nos llevan a ningún lado, sólo nos muestra cómo se ve el enlace en esa parte de la página, nos abre esa página en una nueva pestaña-->
+
+      <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://static.wikia.nocookie.net/reinoanimalia/images/d/d1/Panda_rojo_1.png/revision/latest?cb=20140318224315&path-prefix=es" alt="Un oso panda rojo mirando"></a>
+      <br>
+      <br>
+      <br>
+      <!--TEMA 15 - LISTAS NO ORDENADAS
+      ul - lista no ordenada
+      il - list item-->
+      <h3>Cosas que los oso panda aman...</h3>
+      <ul>
+        <li>Estar solos.</li>
+        <li>Dormir.</li>
+        <li>Trepar árboles.</li>
+        <li>Buscar comida por las noches.</li>
+      </ul>
+      <!--TEMA 16 - LISTAS ORDENADAS
+      ol - lista ordenada
+      il - list item-->
+      <h3>Apariencia...</h3>
+      <ol>
+        <li>Pelaje rojo.</li>
+        <li>Manchas blancas en la cara.</li>
+        <li>Larga y espesa cola.</li>
+      </ol>
+      <!--TEMA 17 - ETIQUETA STRONG
+      letras en negritas, usamos para indicar que una parte del texto es importante-->
+      <h3>Distribución</h3>
+      <p>Los pandas rojos se encuentran en el sur del pie de Himalaya, desde <strong>ndia a China y tan lejos al sur como Myanmar</strong> I. En China, viven principalmente en las suroestes provincias de Yunnan y Sichuan, así como el Tíbet. El panda rojo ha sido encontrado en el más lejano oriente en la provincia de Shaanxi. Aúnque no es originaria de los Estados Unidos, los restos fósiles han sido encontrados en Tennessee.</p>
+      <!--TEMA 18 - TEXTO EN CURSIVA
+      letras en cursiva-->
+      <h3>Dónde viven los Pandas Rojos</h3>
+      <p>Los pandas rojos prosperan en clima <em>templedo</em>  y como bosque, los lugares montañosos donde las temperaturas raramente superan los 25°C (77°F). Los pandas rojos prefieren la altitude entre 2,000 y 4,000 metros (7,000 a 13,000 pies).</p>
+      <!--TEMA 19 - TEXTO TACHADO
+      letras tachadas-->
+      <h3>Lo que comen</h3>
+      <ol>
+        <li>Bambués.</li>
+        <li>Frutas.</li>
+        <li>Insectos.</li>
+        <li><s>Pescado.</s></li>
+      </ol>
+      <!--TEMA 20 - SEPARAR SECCIONES CON UNA LÍNEA
+      hr = Horizontal rule-->
+      <hr>
+      <!--TEMA 21 - FORMULARIOS
+      FORM
+      input = obtener una respuesta del usuario
+      action = valor correspondiente del archivo en el servidor con un nombre específico, dirección en el servidor de el programa que va a manejar esos datos.-->
+      <h2>FORMULARIOS</h2>
+      <form action="/enviar-respuesta">
+        <input type="text">
+        <button type="submit">Enviar</button>
+      </form>
+      <!--TEMA 22 - TEXTO MARCADOR DE POSICIÓN
+      placeholder = marcador de posición
+      le damos una pista al usuario de lo que debe escribir-->
+      <br>
+      <form action="/enviar-respuesta">
+        <input type="text" placeholder="Nombre">
+        <button type="submit">Enviar</button>
+      </form>
+      <!--TEMA 23 - CREAR CAMPO OBLIGATORIO
+      CAMPOS NO VACIOS con required-->
+      <br>
+      <form action="/enviar-respuesta">
+        <input type="text" placeholder="Nombre" required>
+        <button type="submit">Enviar</button>
+      </form>
+      <!--TEMA 23 - BOTONES DE RADIO
+      ELEMENTO de tipo radio = opción y ambas opciones se pueden marcar.-->
+      <br>
+      <form action="/enviar-respuesta">
+        <p>¿Prefieres estar...?</p>
+        <input type="radio"> En casa <br>
+        <input type="radio"> En la calle <br>
+        <input type="radio"> En la escuela <br>
+        <input type="radio"> En el trabajo <br>
+        <br><br>
+      </form>
+      <!--TEMA 24 - LABEL
+      LABEL = selccionar opción cuando tocamos el texto-->
+      <form action="/enviar-respuesta">
+        <p>¿Prefieres estar...?</p>
+        <label><input type="radio"> Soltero</label><br>
+        <label><input type="radio"> Casado</label><br>
+        <label><input type="radio"> Comprometido</label><br>
+        <br><br>
+      </form>
+      <!--TEMA 25 - FOR
+      for = para identificar el elmento input-->
+      <form action="/enviar-respuesta">
+        <p>¿Prefieres comer...?</p>
+        <label for="pizza"><input type="radio" id="pizza">Pizza</label><br>
+
+        <label for="hotdog"><input type="radio" id="hotdog">Hotdog</label><br>
+
+        <label for="hamburguesa"><input type="radio" id="hamburguesa">Hamburguesa</label><br>
+        <br><br>
+      </form>
+       <!--TEMA 26 - GRUPOS DE BOTONES DE RADIO
+        MARCAR SÓLO una opción
+       name = llamar a los grupos-->
+        <form action="/enviar-respuesta">
+          <p>¿Prefieres comer...?</p>
+          <label for="pescado"><input type="radio" id="pescado" name="pescado-camarones-pulpo">Pescado</label><br>
+
+          <label for="camarones"><input type="radio" id="camarones" name="pescado-camarones-pulpo">Camarones</label><br>
+          
+          <label for="pulpo"><input type="radio" id="pulpo" name="pescado-camarones-pulpo">Pulpo</label><br>
+          <br><br>
+        </form> 
+
+        <!--TEMA 27 - salto de linea
+        br = break = romper o separar los elementos-->
+
+        
+        <form>
+          <p>¿Estados emocionales...?</p>
+          <label for="disforia"><input type="checkbox" id="disforia" name="emociones" checked  value="Disforia"> Disforia <br></label>
+          <label for="euforico"><input type="checkbox" id="euforico" name="emociones"> Eufótico <br></label>
+          <label for="irritado"><input type="checkbox" id="irritado" name="emociones"> Irritado <br></label>
+          <label for="reacio">
+            <input type="checkbox"
+              id="reacio" name="emociones"> Reacio 
+            <br>
+          </label>
+        </form>
+
+        <!--TEMA 29 - ATRIBUTO CHECKED
+        permite marcar las opciones para cada uno de los grupos de casillas de verificación o botnoes de radio, se selecciona por defecto ciertos botones-->
+
+        <!--TEMA 30 - ATRIBUTO VALUE
+        específica qué valor se va a enviar al servidor cuando enviemos las respuestas del usuario, valor que recibe el servidor si esa opción seleccionada para ese grupo de botones en particular-->
+
+        <!--TEMA 31 - ELEMENTO DIV
+        Es un contenedor génerico, lo usamos para crear estructuras más complejas en la página web-->
+        <div>
+          <h3>Lo que comen</h3>
+          <ol>
+            <li>Bambués.</li>
+            <li>Frutas.</li>
+            <li>Insectos.</li>
+            <li><s>Pescado.</s></li>
+          </ol>
+        </div>
+    </main>
+    <!--TEMA 32 - PIE DE PÁGINA
+    LUEGO DE la etiqueta de cierre de main-->
+    <!--TEMA 33 - ETIQUETA SMALL
+    Hacer que el texto sea más pequeño-->
+    <!--TEMA 34 - HEAD
+    se escribe antes de body-->
+    <footer>
+      <p>Elaborado por Ing.Ximena Toledo</p>
+      <p><small>Estudiante del IPN</small></p>
+    </footer>
+  </body>
+</html>
